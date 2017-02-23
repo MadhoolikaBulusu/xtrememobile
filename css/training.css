@@ -66,8 +66,9 @@ ul.dashed > li {
 /********************* VENUE ********************/
 
 .venue-mask {
-  background-image: url(../assets/img/banner-desktop.jpg);
+  background-image: url(../assets/img/banner.jpg);
   background-size: cover;
+  background-position-y: -50px;
   margin: 0 auto;
   box-sizing: border-box;
 }
@@ -81,7 +82,7 @@ ul.dashed > li {
 	height: 100%;
 	padding: 20px 100px 20px 100px;
 	box-sizing: border-box;
-	background: rgba(0, 0, 0, 0.35);
+	background: rgba(0, 0, 0, 0.50);
 }
 
 .venue h1 {
@@ -118,6 +119,7 @@ ul.dashed > li {
 
 .venue .register {
 	margin-top: 25px;
+  margin-bottom: 35px;
 	text-align: right;
 }
 
@@ -393,9 +395,24 @@ footer p.about {
 
 @media screen and (max-width: 900px) {
 	.venue-mask {
-		background-image: url(../assets/img/banner-tablet.jpg);
+		background-image: url(../assets/img/rsz_banner.jpg);
 		background-position-x: 0;
 	}
+
+  .venue .register {
+    margin-bottom: 0;
+  }
+
+  .seats-dates .field-info {
+    border-left: 0;
+    border-top: 2px solid #fff;
+    display: inline-block;
+    margin-top: 10px;
+  }
+
+  .seats-dates .item--last {
+    margin-top: -17px;
+  }
 
 	.trainers-container .trainers {
 		width: 100%;
@@ -408,7 +425,7 @@ footer p.about {
 	}
 
 	.venue-mask {
-		background-image: url(../assets/img/banner-mobile.jpg);
+		background-image: url(../assets/img/banner_mobile.jpg);
 	}
 
 	.venue-mask .venue {
@@ -425,6 +442,7 @@ footer p.about {
 
 	.venue .register {
 		text-align: center;
+    margin-bottom: 0;
 	}
 
 	.about-description {
@@ -459,6 +477,7 @@ footer p.about {
 
 	.seats-dates .field-info {
 	    border-left: 0;
+      border-top: 0;
 	    margin-left: 0;
 	    padding-left: 0;
 	}
