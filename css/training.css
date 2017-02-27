@@ -434,11 +434,16 @@ footer p.about {
 
 	.venue h1 {
 		font-size: 2em;
+    text-align: center;
 	}
 
 	.venue .date {
 		font-size: 13px;
 	}
+
+  .venue .date sup {
+    font-size: 8px;
+  }
 
 	.venue .register {
 		text-align: center;
